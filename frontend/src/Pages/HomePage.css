@@ -1,0 +1,19 @@
+#HomePageHeader{
+    background-color: #5f9bc6;
+}
+
+#HomePageFormsCSS{
+    background-color: #7da3ef ;
+}
+
+
+#logoBox{
+    background-color: #010044;
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+
+}
