@@ -6,7 +6,7 @@ const chatRoutes = require("./routes/chatRoutes")
 const userRoutes = require("./routes/userRoutes")
 const messageRoutes = require("./routes/messageRoutes")
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
-const path =require('path');
+// const path =require('path');
 
 const app =express();
 connectDB();
@@ -16,7 +16,7 @@ app.use(
 );
 app.use(express.json()); // to accept JSON Data
 
-app.use(express.static(path.join(__dirname,'../frontend/build')))
+// app.use(express.static(path.join(__dirname,'../frontend/build')))
 
 
 //USE POSTMAN FOR TESTING THE APIS 
@@ -46,9 +46,9 @@ app.use('/api/message', messageRoutes);
 
 
 
-app.use('*',function(req,res){
-  res.sendFile(path.join(__dirname,'../frontend/build/index.html'));
-});
+// app.use('*',function(req,res){
+//   res.sendFile(path.join(__dirname,'../frontend/build/index.html'));
+// });
 
 // // --------------------------deployment------------------------------
 
