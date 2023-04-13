@@ -6,11 +6,12 @@ const chatRoutes = require("./routes/chatRoutes")
 const userRoutes = require("./routes/userRoutes")
 const messageRoutes = require("./routes/messageRoutes")
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
+const cors = require('cors');
 // const path =require('path');
 
 const app =express();
 connectDB();
-
+app.use(cors());
 app.use( 
     express.urlencoded({extended:true})
 );
